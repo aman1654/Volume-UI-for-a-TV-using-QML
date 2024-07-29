@@ -1,0 +1,14 @@
+Explanation of the QML Code
+ApplicationWindow: This is the main window for the QML application.
+Properties:
+maxVolume: The maximum volume level.
+currentVolume: The current volume level, initialized to 50.
+isMuted: A boolean indicating if the TV is muted.
+Volume Control:
+A Column layout holds the volume control buttons and the volume display.
+The top Button increases the volume.
+The Rectangle in the middle represents the volume bar with a blue rectangle indicating the current volume level. The Text inside shows the current volume or "Muted" when muted.
+The bottom Button decreases the volume.
+A Mute button toggles the mute state.
+Connections:
+The Connections element listens for signals from the remote control (simulated here as a remoteControl object), adjusting the volume or toggling mute accordingly.
